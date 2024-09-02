@@ -1,1 +1,1 @@
-Hi, I'm Esteban, a student from Colima, Mexico, trying to learn as much as I can.
+Hi!, I'm Esteban Muñoz, a 20-year-old software engineering student from Colima, Mexico. Currently studying at Universidad de Colima, I'm passionate about back-end development, especially with TypeScript. I enjoy working with databases and managing servers. Always looking to learn and contribute to new projects.
