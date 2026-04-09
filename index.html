@@ -1,173 +1,157 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Esteban Muñoz | Backend & DevOps Portfolio</title>
+    <meta name="description" content="Portfolio of Esteban Muñoz, backend-focused software engineering student with DevOps and low-level systems interests.">
     <link rel="icon" type="image/png" sizes="620x620" href="assets/img/Logo%20Icon%20Sq.png">
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 
-<body>
-    <header class="border-bottom">
-        <div class="container">
-            <nav class="navbar navbar-expand-md bg-body">
-                <div class="container-fluid"><a class="navbar-brand" href="#">Esteban Muñoz<small class="ms-2 text-muted">(turdo)</small></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-2"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div class="collapse navbar-collapse" id="navcol-2">
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"></li>
-                            <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Skills</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Experience</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Certification</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+<body class="bg-slate-950 text-slate-100 antialiased">
+    <div class="min-h-screen bg-gradient-to-b from-slate-950 via-slate-900 to-slate-950">
+        <header class="sticky top-0 z-50 border-b border-white/10 bg-slate-950/80 backdrop-blur">
+            <nav class="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
+                <a href="#top" class="text-sm font-semibold tracking-wide text-slate-200">Esteban Muñoz <span class="text-cyan-400">/ eldido</span></a>
+                <ul class="hidden items-center gap-6 text-sm text-slate-300 md:flex">
+                    <li><a href="#about" class="hover:text-cyan-300">About</a></li>
+                    <li><a href="#what-i-do" class="hover:text-cyan-300">What I Do</a></li>
+                    <li><a href="#stack" class="hover:text-cyan-300">Tech Stack</a></li>
+                    <li><a href="#contact" class="hover:text-cyan-300">Contact</a></li>
+                </ul>
             </nav>
-        </div>
-    </header>
-    <main class="pt-3">
-        <div class="container" id="about_me">
-            <div class="d-lg-flex justify-content-center my-5 py-5 mb-0">
-                <div class="rounded-circle bg-primary overflow-hidden my-auto mx-auto mx-lg-0" style="max-width: 240px; aspect-ratio: 1/1;"><img class="h-100" src="assets/img/clipboard-image.png"></div>
-                <div class="ms-lg-5 d-flex flex-column mt-lg-0 mt-3" style="min-width: fit-content;">
-                    <h1 class="mt-auto text-center">Esteban Antonio Muñoz De la Cruz</h1>
-                    <div class="d-flex mb-auto flex-wrap w-lg-75 justify-content-center pt-3"><a class="btn-outline-primary d-flex align-items-center btn me-3 mb-3" href="https://github.com/Esteban0305" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-github me-2">
-                                <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"></path>
-                            </svg><span>/Esteban0305</span></a><a class="btn-outline-primary d-flex align-items-center btn me-3 mb-3" href="https://www.linkedin.com/in/esteban-antonio-mu%C3%B1oz-de-la-cruz-a71b34259/" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-linkedin me-2">
-                                <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401m-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4"></path>
-                            </svg><span>Esteban Muñoz</span></a><a class="btn-success d-flex align-items-center btn me-3 mb-3" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-download me-2">
-                                <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"></path>
-                                <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"></path>
-                            </svg><span>CV</span></a></div>
-                </div>
-            </div>
-            <p class="lead mb-5 text-center">Hi!, I'm Esteban Muñoz, a 20-year-old software engineering student from Colima, Mexico. Currently studying at Universidad de Colima, I'm passionate about back-end development, especially with TypeScript. I enjoy working with databases and managing servers. Always looking to learn and contribute to new projects.</p>
-        </div>
-        <div class="container-fluid bg-light py-3">
-            <div id="projects" class="container">
-                <h2 class="mb-3">Projects</h2>
-                <div class="row">
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card"><img class="card-img-top w-100 d-block card-img-top" src="assets/img/mermaid-diagram-2024-08-28-082313.png">
-                            <div class="card-body">
-                                <h4 class="card-title">OMS</h4>
-                                <h6 class="text-muted card-subtitle mb-2"><span style="color: rgb(33, 37, 41);">Order Management System</span></h6>
-                                <div class="mb-2"><span class="badge bg-primary me-1">NodeJS</span><span class="badge bg-primary me-1">ExpressJS</span><span class="badge bg-primary me-1">Bootstrap</span><span class="badge bg-primary me-1">WebApp</span><span class="badge bg-primary me-1">MySQL</span><span class="badge bg-primary me-1">Typescript</span></div>
-                                <p class="card-text">System designed to generate Quotations for products and Sales Orders</p><a class="card-link btn btn-primary" href="#">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body">
-                                <h4 class="card-title">Self-Managed Server Setup</h4>
-                                <div class="mb-2"><span class="badge bg-primary me-1">Ubuntu Server</span><span class="badge bg-primary me-1">Linux</span><span class="badge bg-primary me-1">DNS</span><span class="badge bg-primary me-1">email</span><span class="badge bg-primary me-1">FTP</span><span class="badge bg-primary me-1">SSH</span></div>
-                                <p class="card-text">Configured and deployed a self-managed server with essential services, such as DNS, Email, SFTP, SSH.</p><a class="card-link btn btn-primary" href="#">Learn more</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-4 mb-4">
-                        <div class="card">
-                            <div class="card-body"><img class="card-img-top" src="assets/img/turdoteca_logo.svg" style="height: 150px;object-fit: cover;">
-                                <h4 class="card-title">Turdoteca</h4>
-                                <h6 class="text-muted card-subtitle mb-2">Virtual Library</h6>
-                                <div class="mb-2"><span class="badge bg-primary me-1">Ubuntu Server</span><span class="badge bg-primary me-1">Linux</span><span class="badge bg-primary me-1">DNS</span><span class="badge bg-primary me-1">email</span><span class="badge bg-primary me-1">FTP</span><span class="badge bg-primary me-1">SSH</span></div>
-                                <p class="card-text">A web-based virtual library system developed using PHP, HTML, CSS and JSON documents. This project allows users to search, view, and manage books efficiently.</p><a class="card-link btn btn-primary" href="https://github.com/Esteban0305/turdoteca" target="_blank">Learn more</a>
-                            </div>
-                        </div>
+        </header>
+
+        <main id="top" class="mx-auto w-full max-w-6xl px-5">
+            <section id="about" class="grid gap-10 py-16 md:grid-cols-[1.2fr_0.8fr] md:py-24">
+                <div>
+                    <p class="mb-5 inline-flex rounded-full border border-cyan-400/40 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-300">Process Automation • Backend • Software Architecture</p>
+                    <h1 class="text-4xl font-bold leading-tight text-white md:text-5xl">Boo, I'm Esteban Muñoz</h1>
+                    <p class="mt-6 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">I automate business processes and build backend systems that are reliable in production.</p>
+                    <p class="mt-4 max-w-2xl text-base leading-relaxed text-slate-300 md:text-lg">I enjoy architecture, DevOps workflows, and low-level programming with Rust.</p>
+
+                    <div class="mt-8 flex flex-wrap gap-3">
+                        <a href="mailto:esteban@turdo.bid" class="rounded bg-cyan-500 px-4 py-2 text-sm font-semibold text-slate-900 transition hover:bg-cyan-400">Send email</a>
+                        <a href="https://www.linkedin.com/in/esteban-antonio-mu%C3%B1oz-de-la-cruz-a71b34259" target="_blank" rel="noopener" class="rounded border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">LinkedIn</a>
+                        <a href="https://github.com/Esteban0305" target="_blank" rel="noopener" class="rounded border border-white/20 px-4 py-2 text-sm font-semibold text-white transition hover:border-cyan-300 hover:text-cyan-300">GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="my-3">
-                <div class="row">
-                    <div class="col col-12 col-lg-6">
-                        <div class="my-3">
-                            <h2>Education</h2>
-                            <div class="d-flex flex-column">
-                                <div class="card mb-3">
-                                    <div class="card-header">
-                                        <div class="d-flex">
-                                            <h4>Software Engineer</h4><small class="text-muted ms-auto my-auto">2022 - today</small>
-                                        </div>
-                                        <h6 class="text-muted mb-0">Universidad de Colima</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="mb-0">This studies has equipped me with a strong foundation in software engineering principles, agile methodologies, and technical skills, enabling me to design, develop, and manage software projects.</p>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-header">
-                                        <div class="d-flex">
-                                            <h4><span style="background-color: rgb(255, 255, 255);">Technician as Programmer Analyst</span></h4><small class="text-muted ms-auto my-auto">2019 - 2022</small>
-                                        </div>
-                                        <h6 class="text-muted mb-0">Universidad de Colima</h6>
-                                    </div>
-                                    <div class="card-body">
-                                        <p class="mb-0">I gained hands-on experience with a range of technologies and tools such as Database Management with MySQL, software design in UML, also programming languages as Java, C# for .NET Framework, PHP and C.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="my-3">
-                            <h2>Interships</h2>
+
+                <aside class="h-fit rounded-2xl border border-white/10 bg-white/5 p-5">
+                    <div class="mb-4 overflow-hidden rounded-xl border border-white/10">
+                        <img src="assets/img/me.png" alt="Esteban Muñoz" class="h-56 w-full object-cover">
+                    </div>
+                    <h2 class="text-sm font-semibold uppercase tracking-widest text-slate-300">Quick profile</h2>
+                    <ul class="mt-4 space-y-3 text-sm text-slate-200">
+                        <li><span class="text-slate-400">Location:</span> Wherever my laptop decides to exist</li>
+                        <li><span class="text-slate-400">Focus:</span> Process automation + backend architecture</li>
+                        <li><span class="text-slate-400">Specialty:</span> DevOps-minded backend and low-level Rust</li>
+                        <li><span class="text-slate-400">Interests:</span> Systems, containers, deployment pipelines</li>
+                    </ul>
+                </aside>
+            </section>
+
+            <section id="what-i-do" class="py-8 md:py-12">
+                <div class="mb-6 flex items-end justify-between">
+                    <h2 class="text-2xl font-bold text-white md:text-3xl">What I Do</h2>
+                </div>
+                <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">REST APIs</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Design and build REST APIs with Node.js and TypeScript for real-world use cases.</p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">Data Management</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Structure and manage data using MongoDB and SQL databases for consistency and performance.</p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">Backend Systems</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Develop backend systems for business workflows with scalability and maintainability in mind.</p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">Linux Deployment</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Deploy and maintain applications in Linux-based environments with reliable operational practices.</p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">Containers</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Work with containers and lightweight infrastructure like Docker and LXC.</p>
+                    </article>
+                    <article class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="font-semibold text-cyan-300">System Reliability</h3>
+                        <p class="mt-2 text-sm leading-relaxed text-slate-300">Make sure systems are not only built, but also stable and reliable in production.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section id="stack" class="py-8 md:py-12">
+                <h2 class="text-2xl font-bold text-white md:text-3xl">Tech Stack</h2>
+                <div class="mt-6 grid gap-6 md:grid-cols-2">
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-300">Languages</h3>
+                        <div class="mt-4 flex flex-wrap gap-3 text-3xl">
+                            <span title="Rust" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-rust-original"></i></span>
+                            <span title="TypeScript" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-typescript-plain colored"></i></span>
+                            <span title="JavaScript" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-javascript-plain colored"></i></span>
+                            <span title="Java" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-java-plain colored"></i></span>
+                            <span title="PHP" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-php-plain colored"></i></span>
                         </div>
                     </div>
-                    <div class="col col-12 col-lg-6">
-                        <div class="my-3">
-                            <h2>Certifications</h2>
-                            <div>
-                                <div class="card mb-3">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <h5>Introducción a las tecnologías emergentes: Edición 2024</h5><small class="text-muted ms-auto my-auto">2024</small>
-                                        </div>
-                                        <h6 class="text-muted card-subtitle mb-0">Emtech</h6>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <h5>NDG Linux Unhatched</h5><small class="text-muted ms-auto my-auto">mar 2023</small>
-                                        </div>
-                                        <h6 class="text-muted card-subtitle mb-0">Cisco Network Academy</h6>
-                                    </div>
-                                </div>
-                                <div class="card mb-3">
-                                    <div class="card-body">
-                                        <div class="d-flex">
-                                            <h5>Linux Essentials</h5><small class="text-muted ms-auto my-auto">mar 2023</small>
-                                        </div>
-                                        <h6 class="text-muted card-subtitle mb-0">Cisco Network Academy</h6>
-                                    </div>
-                                </div>
-                            </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-300">Backend</h3>
+                        <div class="mt-4 flex flex-wrap gap-3 text-3xl">
+                            <span title="Node.js" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-nodejs-plain colored"></i></span>
+                            <span title="Express" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60 text-slate-200"><i class="devicon-express-original"></i></span>
+                            <span title="Next.js" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60 text-slate-200"><i class="devicon-nextjs-original"></i></span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-300">Databases</h3>
+                        <div class="mt-4 flex flex-wrap gap-3 text-3xl">
+                            <span title="PostgreSQL" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-postgresql-plain colored"></i></span>
+                            <span title="MySQL" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-mysql-original colored"></i></span>
+                            <span title="MongoDB" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-mongodb-plain colored"></i></span>
+                        </div>
+                    </div>
+                    <div class="rounded-xl border border-white/10 bg-white/5 p-5">
+                        <h3 class="text-sm font-semibold uppercase tracking-widest text-slate-300">Systems & Infra</h3>
+                        <div class="mt-4 flex flex-wrap gap-3 text-3xl">
+                            <span title="Linux" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-linux-plain"></i></span>
+                            <span title="Docker" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60"><i class="devicon-docker-plain colored"></i></span>
+                            <span title="LXC" class="inline-flex h-12 w-12 items-center justify-center rounded-lg border border-white/10 bg-slate-900/60">
+                                <img src="https://cdn.simpleicons.org/linuxcontainers/FFFFFF" alt="LXC" class="h-6 w-6">
+                            </span>
                         </div>
                     </div>
                 </div>
+            </section>
+
+            <section id="contact" class="py-8 pb-16 md:py-12 md:pb-24">
+                <div class="rounded-2xl border border-cyan-300/30 bg-cyan-500/10 p-6 md:p-8">
+                    <h2 class="text-2xl font-bold text-white md:text-3xl">Contact</h2>
+                    <p class="mt-3 max-w-2xl text-sm leading-relaxed text-slate-200 md:text-base">If you want to collaborate on backend or infrastructure projects, feel free to reach out by email or LinkedIn.</p>
+                    <div class="mt-6 flex flex-wrap gap-3">
+                        <a href="mailto:esteban@turdo.bid" class="rounded-lg bg-white px-4 py-2 text-sm font-semibold text-slate-900 hover:bg-slate-200">esteban@turdo.bid</a>
+                        <a href="https://www.linkedin.com/in/esteban-antonio-mu%C3%B1oz-de-la-cruz-a71b34259" target="_blank" rel="noopener" class="rounded-lg border border-white/30 px-4 py-2 text-sm font-semibold text-white hover:border-white">LinkedIn</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="border-t border-white/10">
+            <div class="mx-auto flex w-full max-w-6xl flex-col gap-2 px-5 py-6 text-xs text-slate-400 sm:flex-row sm:items-center sm:justify-between">
+                <p>© 2026 Esteban Muñoz. All rights reserved.</p>
+                <a href="https://github.com/Esteban0305" target="_blank" rel="noopener" class="hover:text-cyan-300">github.com/Esteban0305</a>
             </div>
-            <hr>
-            <div class="my-3">
-                <h2>Skills</h2>
-            </div>
-            <div class="my-3">
-                <h2>Experience</h2>
-            </div>
-            <div class="my-3">
-                <h2>Contact me</h2>
-            </div>
-        </div>
-    </main>
-    <footer class="bg-dark py-3">
-        <div class="container d-flex">
-            <p class="text-white mb-0">All right reserved Esteban Muñoz © 2024</p><a class="ms-auto text-white" href="mailto:me@turdo.bid">me@turdo.bid</a>
-        </div>
-    </footer>
-    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+        </footer>
+    </div>
 </body>
 
 </html>
